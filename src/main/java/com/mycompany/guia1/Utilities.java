@@ -5,14 +5,30 @@
  */
 package com.mycompany.guia1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author usuario
  */
 public class Utilities {
+    
     public String getResume (String texto){
-    
-    
+        
+        String Resumen = "";
+        
+        
+        for(int inicio=0; inicio != texto.length() && inicio<30  ;inicio++){
+            Resumen = Resumen + texto.charAt(inicio);     
+            
+        }
+        
+        return Resumen;
+           
+        
+        
     }
     
+    
+        
 }
